@@ -1,5 +1,17 @@
+/* body{
+  background-color: blue;
+} */
 .footbelt{
   background-color: #002b44;
   color: #fff;
 
+}
+.socials{
+  margin: 50px auto;
+}
+.socials img{
+  width: 60px;
+}
+.socials div{
+  text-align: center;
 }
