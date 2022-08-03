@@ -47,6 +47,9 @@ body{
 .about-text{
   font-size: 4rem;
 }
+.feature-tab{
+  text-align: center;
+}
 
 @media screen and (max-width: 1200px){
   .paragraph-center{
