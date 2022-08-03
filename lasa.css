@@ -21,7 +21,7 @@ body{
   margin: 50px auto;
 }
 .socials img{
-  width: 60px;
+  width: 40px;
 }
 .socials div{
   text-align: center;
@@ -34,7 +34,23 @@ body{
 
 .carousel-caption h1{
   font-size: 4rem;
+  opacity: 0.9;
 }
 .carousel img{
   border-radius: 10px;
+}
+.contentone{
+  border-radius: 10px;
+  width: 700px;
+  max-height: 500px;
+}
+.about-text{
+  font-size: 4rem;
+}
+
+@media screen and (max-width: 1200px){
+  .paragraph-center{
+    text-align: center;
+  }
+
 }
