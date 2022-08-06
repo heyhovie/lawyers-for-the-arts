@@ -1,66 +1,87 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Lawyers for the Arts</title>
-    <link rel="stylesheet" href="lasa2.css">
-  </head>
-  <body>
-    <div class="logo">
-      <img src="images2/lasalogonew.png" alt="">
-    </div>
 
-    <div class="carousel">
-      <h1 class="heading">THE ARTIST LEGAL FRIEND</h1>
-    </div>
+<head>
+  <meta charset="utf-8">
+  <title>Lawyers for the Arts</title>
+  <link rel="stylesheet" href="lasa2.css">
+</head>
 
-    <div class="about">
+<body onload="bgSwitch()">
+  <div class="logo">
+    <img src="images2/lasalogonew.png" alt="">
+  </div>
 
-    </div>
+  <div class="carousel" id="carousel">
+    <h1 class="heading">THE ARTIST LEGAL FRIEND</h1>
 
-    <div class="services">
-      <div class="card">
-        <img src="" alt="card image">
-        <p>Contract review <br> and negotiation</p>
-      </div>
-      <div class="card">
-        <img src="" alt="card image">
-        <p>Legal advice</p>
-      </div>
-      <div class="card">
-        <img src="" alt="card image">
-        <p>Litigation</p>
-      </div>
-    </div>
+  </div>
 
-    <div class="info">
-      <div class="card info-card">
-        <h3 class="heading">For more info</h3>
-        <a href="#">Go</a>
-      </div>
-      <div class="card pr-card">
-        <h3 class="heading">PR & Marketing</h3>
-        <a href="#">Go</a>
-      </div>
-      <div class="card legal-card">
-        <h3 class="heading">Legal</h3>
-        <a href="#">Go</a>
-      </div>
-    </div>
+  <div class="about">
 
-    <div class="socials">
-      <a href="#"><img src="" alt="twitter"></a>
-      <a href="#"><img src="" alt="facebook"></a>
-      <a href="#"><img src="" alt="instagram"></a>
-      <a href="#"><img src="" alt="linkedin"></a>
-      <a href="#"><img src="" alt="youtube"></a>
-    </div>
+  </div>
 
-    <div class="footer">
-      <p>Copyright 2022, LASA</p>
-      <p>Site by <a href="#">Takunda Hove</a> </p>
+  <div class="services">
+    <div class="card">
+      <img src="images2/contract.png" alt="card image">
+      <p>Contract review <br> and negotiation</p>
     </div>
-    <script src="lasa.js" charset="utf-8"></script>
-    <script src="jquery-3.6.0.min.js"></script>
-  </body>
+    <div class="card">
+      <img src="images2/examination.png" alt="card image">
+      <p>Legal advice</p>
+    </div>
+    <div class="card">
+      <img src="images2/legal.png" alt="card image">
+      <p>Litigation</p>
+    </div>
+  </div>
+
+  <div class="info">
+    <div class="card info-card">
+      <h3 class="heading">For more info</h3>
+      <a href="#">Go</a>
+    </div>
+    <div class="card pr-card">
+      <h3 class="heading">PR & Marketing</h3>
+      <a href="#">Go</a>
+    </div>
+    <div class="card legal-card">
+      <h3 class="heading">Legal</h3>
+      <a href="#">Go</a>
+    </div>
+  </div>
+
+  <div class="socials">
+    <h1>Follow us</h1>
+    <div class="icons">
+      <a href="#"><img src="images2/twitter.png" alt="twitter"></a>
+      <a href="#"><img src="images2/facebook.png" alt="facebook"></a>
+      <a href="#"><img src="images2/instagram.png" alt="instagram"></a>
+      <a href="#"><img src="images2/linkedin.png" alt="linkedin"></a>
+      <a href="#"><img src="images2/youtube.png" alt="youtube"></a>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Copyright 2022, LASA</p>
+    <p>Site by <a href="#">Takunda Hove</a> </p>
+  </div>
+
+  <!-- <script src="lasa.js" charset="utf-8"></script> -->
+  <script type="text/javascript">
+    var i = 0;
+
+    function change() {
+      var doc = document.getElementById("carousel");
+      var className = ["url('images2/feature1dark.png')", "url('images2/feature2dark.png')", "url('images2/feature3dark.png')"];
+      doc.style.backgroundImage = className[i];
+      i = (i + 1) % className.length;
+    }
+
+    function bgSwitch() {
+      setInterval(change, 5000);
+    }
+  </script>
+</body>
+
 </html>
