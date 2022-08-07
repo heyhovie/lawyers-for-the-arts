@@ -64,7 +64,7 @@ hr{
 .services img{
   height: 100px;
 }
-.services p{
+.services p, .about p{
   font-size: 1.2rem;
 }
 
