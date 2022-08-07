@@ -8,7 +8,238 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="lasa.css">
+  <!-- <link rel="stylesheet" href="lasa.css"> -->
+  <style media="screen">
+    body {
+      color: #45423f;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+    }
+
+    hr {
+      margin: auto 80px 20px;
+    }
+
+    .logo img {
+      margin: 30px 40px 20px;
+      text-align: left;
+      width: 200px;
+    }
+
+    /* Carousel________________________________________________________ */
+    .carousel {
+      background-color: #93826d;
+      background-image: url("images/banner2dark.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+      height: 740px;
+      padding: 20px;
+      transition: 1s;
+    }
+
+    .carousel .heading {
+      color: #fff;
+      font-size: 6rem;
+      opacity: 0.9;
+    }
+
+    .carousel .motto {
+      color: #fff;
+      font-size: 4rem;
+      font-weight: bolder;
+      opacity: 0.9;
+    }
+
+    /* About________________________________________________________ */
+    .about {
+      padding: 10px 80px;
+    }
+
+    .about p {
+      margin-bottom: 50px;
+    }
+
+    /* Services________________________________________________________ */
+    .service-heading {
+      margin: auto 80px;
+    }
+
+    .services,
+    .info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .services .card {
+      margin: 40px;
+      text-align: center;
+      width: 300px;
+    }
+
+    .services img {
+      height: 100px;
+    }
+
+    .services p,
+    .about p {
+      font-size: 1.2rem;
+    }
+
+    /* Info________________________________________________________ */
+    .info {
+      margin-bottom: 40px;
+    }
+
+    .info .card {
+      align-items: flex-start;
+      border-radius: 20px;
+      color: #fff;
+      display: flex;
+      flex-flow: column;
+      flex-wrap: wrap;
+      height: 175px;
+      justify-content: space-between;
+      margin: 20px;
+      width: 300px;
+    }
+
+    .info .heading {
+      font-size: 2rem;
+      margin: 20px;
+    }
+
+    .info .card a {
+      background-color: #93826d;
+      border-radius: 40px;
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 20px;
+      padding: 5px 15px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .info .card a:hover {
+      background-color: #413327;
+    }
+
+    .info-card,
+    .pr-card,
+    .legal-card {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .info-card {
+      background-image: url("images/feature3dark.png");
+
+    }
+
+    .pr-card {
+      background-image: url("images/feature2dark.png");
+    }
+
+    .legal-card {
+      background-image: url("images/feature1dark.png");
+    }
+
+    /* Socials____________________________________________________ */
+    .socials {
+      margin: 40px;
+      text-align: center;
+    }
+
+    .socials img {
+      margin: 30px 20px 0;
+      width: 40px;
+      transition: 0.3s;
+    }
+
+    .socials img:hover {
+      opacity: 0.7;
+    }
+
+    /* Footer____________________________________________________ */
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 40px;
+    }
+
+    .footer p,
+    .footer a {
+      color: #45423f;
+      font-size: 0.8rem;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    /* Mobile___________________________________________________ */
+    @media screen and (max-width: 1000px) {
+      .logo {
+        text-align: center;
+      }
+
+      .info .card {
+        align-items: center;
+        flex-flow: row;
+        flex-wrap: wrap;
+        height: 150px;
+        margin: 40px;
+        width: 100%;
+      }
+
+      .info .card a {
+        border-radius: 50px;
+        font-size: 3rem;
+        margin: 10px;
+        padding: 15px;
+        text-decoration: none;
+      }
+
+      .about {
+        padding: 10px 40px;
+        text-align: center;
+      }
+
+      .about p {
+        font-size: 1.6rem;
+      }
+
+      .service-heading {
+        text-align: center;
+      }
+
+      hr {
+        margin: auto 40px 20px;
+      }
+
+      .services .card {
+        align-items: center;
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-start;
+        width: 80%;
+      }
+
+      .services p {
+        font-size: 2.5rem;
+        margin: 40px;
+        text-align: left;
+      }
+
+      .services img {
+        margin: auto 40px auto 0;
+      }
+    }
+  </style>
 </head>
 
 <body onload="bgSwitch()">
