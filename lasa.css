@@ -155,7 +155,7 @@ hr{
     flex-flow: row;
     flex-wrap: wrap;
     height: 150px;
-    margin: 20px;
+    margin: 40px;
     width: 100%;
   }
   .info .card a{
@@ -168,6 +168,9 @@ hr{
   .about{
     padding: 10px 40px;
     text-align:center;
+  }
+  .about p{
+    font-size: 1.6rem;
   }
   .socials img{
     width: 30px;
