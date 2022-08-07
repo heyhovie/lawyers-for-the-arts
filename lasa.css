@@ -14,7 +14,7 @@ body{
 /* Carousel________________________________________________________ */
 .carousel{
   background-color: #93826d;
-  background-image: url("images2/feature1dark.png");
+  background-image: url("images/feature1dark.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -100,14 +100,14 @@ body{
   background-size: cover;
 }
 .info-card{
-  background-image: url("images2/feature3dark.png");
+  background-image: url("images/feature3dark.png");
 
 }
 .pr-card{
-  background-image: url("images2/feature2dark.png");
+  background-image: url("images/feature2dark.png");
 }
 .legal-card{
-  background-image: url("images2/feature1dark.png");
+  background-image: url("images/feature1dark.png");
 }
 
 /* Socials____________________________________________________ */
