@@ -153,6 +153,7 @@ hr{
   .info .card{
     align-items:center;
     flex-flow: row;
+    flex-wrap: wrap;
     height: 100px;
     margin: 20px;
     width: 100%;
