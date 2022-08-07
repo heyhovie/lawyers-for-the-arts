@@ -82,6 +82,7 @@
   <!-- <script src="lasa.js" charset="utf-8"></script> -->
   <script type="text/javascript">
     var i = 0;
+    var j = 0;
 
     function change() {
       var pic = document.getElementById("carousel");
@@ -93,8 +94,8 @@
     function fadeIn() {
       var mottoText = document.getElementById("motto");
       var slideText = ["You speak. We Listen. We Fight. You Win!", "You say. We Hear. We Act. You Win!", "You speak. We Hear. We Act. You Win!", "You Say. We Listen. We Fight. You Win!"];
-      mottoText.innerHTML = slideText[i];
-      i = (i + 1) % slideText.length;
+      mottoText.innerHTML = slideText[j];
+      j = (j + 1) % slideText.length;
     }
 
     function bgSwitch() {
