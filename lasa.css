@@ -146,7 +146,7 @@ hr{
 }
 
 /* Mobile___________________________________________________ */
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1000px){
   .logo{
     text-align: center;
   }
@@ -176,5 +176,20 @@ hr{
   }
   hr{
     margin: auto 40px 20px;
+  }
+  .services .card{
+    align-items: center;
+    display: flex;
+    flex-flow: row;
+    justify-content:flex-start;
+    width: 80%;
+  }
+  .services p{
+    font-size: 2.2rem;
+    margin: 40px;
+    text-align: left;
+  }
+  .services img{
+    margin: auto 100px;
   }
 }
