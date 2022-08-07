@@ -1,62 +1,165 @@
 body{
-  padding: 0;
+  color: #45423f;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
 }
 
-.footbelt{
-  background-color: #002b44;
-  color: #fff;
-  padding: 10px;
-}
-.footbelt p{
-  margin: 10px;
-  text-align: center;
-}
-.footbelt a{
-  color: #fff;
-  font-weight: bold;
-  text-decoration: none;
-}
-.socials{
-  margin: 50px auto;
-}
-.socials img{
-  width: 40px;
-}
-.socials div{
-  text-align: center;
+
+.logo img{
+  margin: 30px 40px 20px;
+  text-align: left;
+  width: 200px;
 }
 
-.site-badge{
-  margin: 40px auto 30px;
-  text-align: center;
+/* Carousel________________________________________________________ */
+.carousel{
+  background-color: #93826d;
+  background-image: url("images2/feature1dark.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  height: 740px;
+  padding: 20px;
+  transition: 1s;
 }
-
-.carousel-caption h1{
-  font-size: 4rem;
+.carousel .heading{
+  color: #fff;
+  font-size: 6rem;
   opacity: 0.9;
 }
-.carousel img{
-  border-radius: 10px;
-}
-.contentone{
-  border-radius: 10px;
-  width: 700px;
-  max-height: 500px;
-}
-.about-text{
+.carousel .motto{
+  color: #fff;
   font-size: 4rem;
+  font-weight: bolder;
+  opacity: 0.9;
 }
-.feature-tab{
+
+/* About________________________________________________________ */
+.about{
+  padding: 10px 80px;
+}
+.about p{
+  margin-bottom: 50px;
+}
+
+/* Services________________________________________________________ */
+.services, .info{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+}
+.services .card{
+  margin: 40px;
+  text-align: center;
+  width: 300px;
+}
+.services img{
+  height: 100px;
+}
+.services p{
+  font-size: 1.2rem;
+}
+
+/* Info________________________________________________________ */
+.info .card{
+  align-items:flex-start;
+  border-radius: 20px;
+  color: #fff;
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  height: 175px;
+  justify-content: space-between;
+  margin: 20px;
+  width: 300px;
+}
+.info .heading{
+  font-size: 2rem;
+  margin: 20px;
+}
+.info .card a{
+  background-color: #93826d;
+  border-radius:40px;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 20px;
+  padding: 5px 15px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.info .card a:hover{
+  background-color: #413327;
+}
+.info-card,.pr-card,.legal-card{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.info-card{
+  background-image: url("images2/feature3dark.png");
+
+}
+.pr-card{
+  background-image: url("images2/feature2dark.png");
+}
+.legal-card{
+  background-image: url("images2/feature1dark.png");
+}
+
+/* Socials____________________________________________________ */
+.socials{
+  margin: 40px;
   text-align: center;
 }
+.socials img{
+  margin:30px 20px 0;
+  width: 40px;
+  transition: 0.3s;
+}
+.socials img:hover{
+  opacity: 0.7;
+}
 
+/* Footer____________________________________________________ */
+.footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px;
+}
+.footer p, .footer a{
+  color: #45423f;
+  font-size: 0.8rem;
+  text-align: center;
+  text-decoration: none;
+}
 
-@media screen and (max-width: 1200px){
-  .paragraph-center{
+/* Mobile___________________________________________________ */
+@media screen and (max-width: 800px){
+  .logo{
     text-align: center;
   }
-  .carousel-caption h1{
-    font-size: 1rem;
+  .info .card{
+    align-items:center;
+    flex-flow: row;
+    height: 100px;
+    margin: 20px;
+    width: 100%;
+  }
+  .info .card a{
+    border-radius:50px;
+    font-size: 3rem;
+    margin: 10px;
+    padding: 15px;
+    text-decoration: none;
+  }
+  .about{
+    padding: 10px 40px;
+  }
+  .socials img{
+    width: 30px;
   }
 }
