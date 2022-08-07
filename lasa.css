@@ -3,7 +3,9 @@ body{
   font-family: 'Poppins', sans-serif;
   margin: 0;
 }
-
+hr{
+  margin: auto 80px 20px;
+}
 
 .logo img{
   margin: 30px 40px 20px;
@@ -46,6 +48,9 @@ body{
 }
 
 /* Services________________________________________________________ */
+.service-heading{
+  margin: auto 80px;
+}
 .services, .info{
   display: flex;
   flex-wrap: wrap;
@@ -64,6 +69,9 @@ body{
 }
 
 /* Info________________________________________________________ */
+.info{
+  margin-bottom: 40px;
+}
 .info .card{
   align-items:flex-start;
   border-radius: 20px;
@@ -158,8 +166,15 @@ body{
   }
   .about{
     padding: 10px 40px;
+    text-align:center;
   }
   .socials img{
     width: 30px;
+  }
+  .service-heading{
+    text-align: center;
+  }
+  hr{
+    margin: auto 40px 20px;
   }
 }
